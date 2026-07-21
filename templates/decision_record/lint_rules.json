@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "id": "alternatives_documented",
+      "severity": "warning",
+      "rule": "alternatives should include at least 2 options with descriptions"
+    },
+    {
+      "id": "decision_status_set",
+      "severity": "info",
+      "rule": "status should be accepted or deprecated before archival"
+    }
+  ]
+}

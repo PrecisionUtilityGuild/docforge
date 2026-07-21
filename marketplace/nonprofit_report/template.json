@@ -1,0 +1,17 @@
+{
+  "id": "nonprofit_report",
+  "version": "1.0.0",
+  "name": "Nonprofit Annual Report",
+  "description": "Annual impact report with mission, metrics, programs, financials, and donor thank-you",
+  "category": "marketplace",
+  "author": "DocForge Community",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 2, "max": 6 },
+  "inputs": ["title", "organization", "year", "mission", "impact_metrics", "programs", "financials", "thank_you"],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

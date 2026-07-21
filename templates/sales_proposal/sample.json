@@ -1,0 +1,51 @@
+{
+  "title": "Platform Integration Proposal",
+  "client": {
+    "name": "Northwind Logistics",
+    "contact": "Sam Rivera",
+    "email": "sam.rivera@northwind.example"
+  },
+  "date": "2026-06-11",
+  "executive_summary": "Northwind seeks a unified reporting layer across three ERP instances. We propose a ten-week engagement covering discovery, integration, validation, and rollout with dedicated solution engineering support.",
+  "scope": [
+    { "item": "Inventory sync between ERP and analytics warehouse", "notes": "Bidirectional, hourly batch" },
+    { "item": "Custom KPI dashboard templates for operations leadership" },
+    { "item": "Runbook and admin training for internal BI team" }
+  ],
+  "timeline": [
+    { "phase": "Discovery", "duration": "2 weeks", "deliverables": "Integration map, data contract" },
+    { "phase": "Build", "duration": "6 weeks", "deliverables": "Pipelines, templates, QA sign-off" },
+    { "phase": "Rollout", "duration": "2 weeks", "deliverables": "Training, hypercare" }
+  ],
+  "pricing": {
+    "line_items": [
+      { "item": "Solution engineering (480 hrs)", "amount": "$96,000" },
+      { "item": "Project management", "amount": "$12,000" },
+      { "item": "Training & documentation", "amount": "$8,000" }
+    ],
+    "subtotal": "$116,000",
+    "total": "$127,600",
+    "terms": "Net 30 · 50% at kickoff · 50% at UAT acceptance"
+  },
+  "assumptions": [
+    "Northwind provides VPN and sandbox credentials within 5 business days",
+    "Change requests outside scope require signed change order"
+  ],
+  "next_steps": [
+    "Executive review of scope and pricing",
+    "Sign SOW and schedule kickoff workshop"
+  ],
+  "diagram": {
+    "type": "process",
+    "title": "Delivery Process",
+    "nodes": [
+      { "id": "discover", "label": "Discovery" },
+      { "id": "build", "label": "Build" },
+      { "id": "deploy", "label": "Deploy" }
+    ],
+    "edges": [
+      ["discover", "build"],
+      ["build", "deploy"]
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "technical_note",
+  "version": "1.0.0",
+  "name": "Technical Note",
+  "description": "Compact one-page technical note with Markdown notes, equations, and references",
+  "category": "technical",
+  "typst_version": ">=0.14.0",
+  "packages": {
+    "@preview/cmarker": "0.1.6",
+    "@preview/mitex": "0.2.7"
+  },
+  "page_budget": { "min": 1, "max": 2 },
+  "inputs": ["title", "summary", "body_md", "equations", "references"],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

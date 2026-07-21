@@ -1,0 +1,30 @@
+{
+  "title": "Series A Pitch — DocForge",
+  "company": "DocForge Inc.",
+  "tagline": "Schema-first PDF generation for AI agents",
+  "problem": "AI agents produce chat answers, but business workflows need polished PDF deliverables. Existing document tools optimize for human authors, not agent pipelines.",
+  "solution": "DocForge provides validated JSON schemas, Typst templates, and a compile-preview-export workflow so agents produce board-ready PDFs without writing layout code.",
+  "market": "$4.2B document automation TAM growing 18% YoY. Initial wedge: ops teams and AI-native startups shipping client-facing reports.",
+  "traction": "$1.8M ARR, 140% net revenue retention, 42 enterprise design partners, and 3.2M documents compiled in the last 90 days.",
+  "team": [
+    {
+      "name": "Alex Morgan",
+      "role": "CEO",
+      "bio": "Former PM at Stripe; built document APIs at scale."
+    },
+    {
+      "name": "Jordan Lee",
+      "role": "CTO",
+      "bio": "Typst contributor; ex-infrastructure lead at Notion."
+    },
+    {
+      "name": "Sam Rivera",
+      "role": "Head of GTM",
+      "bio": "Scaled B2B SaaS from $0 to $20M ARR at two startups."
+    }
+  ],
+  "ask": {
+    "amount": "$8M Series A",
+    "use_of_funds": "Expand template marketplace, hire 6 engineers, and launch enterprise compliance exports (PDF/A, PDF/UA)."
+  }
+}

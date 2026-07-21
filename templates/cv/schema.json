@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["name", "title", "contact", "summary", "experience", "education", "skills"],
+  "additionalProperties": false,
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "contact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "location": { "type": "string" },
+        "linkedin": { "type": "string" },
+        "website": { "type": "string" }
+      }
+    },
+    "summary": { "type": "string", "minLength": 1 },
+    "experience": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["company", "role", "dates", "bullets"],
+        "additionalProperties": false,
+        "properties": {
+          "company": { "type": "string" },
+          "role": { "type": "string" },
+          "dates": { "type": "string" },
+          "bullets": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "education": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["institution", "degree", "dates"],
+        "additionalProperties": false,
+        "properties": {
+          "institution": { "type": "string" },
+          "degree": { "type": "string" },
+          "dates": { "type": "string" },
+          "details": { "type": "string" }
+        }
+      }
+    },
+    "skills": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "typst_snippets": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "footer_note": { "type": "string", "maxLength": 500 }
+      }
+    }
+  }
+}

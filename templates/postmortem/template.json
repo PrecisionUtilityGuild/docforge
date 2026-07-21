@@ -1,0 +1,28 @@
+{
+  "id": "postmortem",
+  "version": "1.0.0",
+  "name": "Blameless Postmortem",
+  "description": "3–12 page blameless post-incident review with timeline, impact, root cause, retrospectives, and action items",
+  "category": "operations",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 3, "max": 12 },
+  "inputs": [
+    "title",
+    "date",
+    "severity",
+    "summary",
+    "timeline",
+    "impact",
+    "root_cause",
+    "what_went_well",
+    "what_went_wrong",
+    "action_items",
+    "lessons_learned"
+  ],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

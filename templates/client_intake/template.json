@@ -1,0 +1,16 @@
+{
+  "id": "client_intake",
+  "version": "1.0.0",
+  "name": "Client Intake",
+  "description": "Discovery intake form with objectives, requirements, constraints, and next steps",
+  "category": "business",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 1, "max": 6 },
+  "inputs": ["title", "client", "date", "contact", "objectives", "requirements", "constraints", "next_steps"],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

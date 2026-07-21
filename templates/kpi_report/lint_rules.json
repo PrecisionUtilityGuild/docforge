@@ -1,0 +1,9 @@
+{
+  "checks": [
+    {
+      "id": "kpis_have_targets",
+      "severity": "warning",
+      "rule": "each kpi should have target when available"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "id": "objectives_present",
+      "severity": "warning",
+      "rule": "objectives should have at least 2 items"
+    },
+    {
+      "id": "next_steps_actionable",
+      "severity": "info",
+      "rule": "next_steps items should start with a verb"
+    }
+  ]
+}

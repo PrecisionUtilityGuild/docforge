@@ -1,0 +1,9 @@
+{
+  "checks": [
+    {
+      "id": "questions_have_responses",
+      "severity": "warning",
+      "rule": "each question should have at least 2 response options"
+    }
+  ]
+}

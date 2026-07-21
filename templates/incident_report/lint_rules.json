@@ -1,0 +1,9 @@
+{
+  "checks": [
+    {
+      "id": "timeline_has_events",
+      "severity": "warning",
+      "rule": "timeline must have at least 2 events"
+    }
+  ]
+}

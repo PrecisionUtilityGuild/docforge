@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["title", "period", "headline_metrics", "highlights", "asks"],
+  "additionalProperties": false,
+  "properties": {
+    "title": { "type": "string", "minLength": 1 },
+    "period": { "type": "string", "minLength": 1 },
+    "headline_metrics": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["label", "value", "trend"],
+        "additionalProperties": false,
+        "properties": {
+          "label": { "type": "string" },
+          "value": { "type": "string" },
+          "trend": { "type": "string", "enum": ["up", "down", "flat"] }
+        }
+      }
+    },
+    "highlights": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "asks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["title"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "type": "string" },
+          "owner": { "type": "string" },
+          "due": { "type": "string" }
+        }
+      }
+    },
+    "typst_snippets": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "footer_note": { "type": "string", "maxLength": 500 }
+      }
+    }
+  }
+}

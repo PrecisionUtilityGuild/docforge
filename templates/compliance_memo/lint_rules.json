@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "id": "action_items_have_owners",
+      "severity": "warning",
+      "rule": "each action item should include owner and due date"
+    },
+    {
+      "id": "requirements_specific",
+      "severity": "info",
+      "rule": "requirements should reference measurable controls"
+    }
+  ]
+}

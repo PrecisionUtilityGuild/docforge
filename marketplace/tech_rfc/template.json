@@ -1,0 +1,17 @@
+{
+  "id": "tech_rfc",
+  "version": "1.0.0",
+  "name": "Technical RFC",
+  "description": "Engineering RFC with status, authors, motivation, specification, alternatives, and open questions",
+  "category": "marketplace",
+  "author": "DocForge Community",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 2, "max": 12 },
+  "inputs": ["title", "rfc_id", "status", "authors", "summary", "motivation", "specification", "alternatives", "unresolved_questions"],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

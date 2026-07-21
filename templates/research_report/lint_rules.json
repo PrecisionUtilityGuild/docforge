@@ -1,0 +1,9 @@
+{
+  "checks": [
+    {
+      "id": "abstract_length",
+      "severity": "warning",
+      "rule": "abstract word count between 30 and 500"
+    }
+  ]
+}

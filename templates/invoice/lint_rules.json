@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "id": "line_items_have_quantities",
+      "severity": "warning",
+      "rule": "each line item must have quantity > 0"
+    },
+    {
+      "id": "payment_terms_present",
+      "severity": "info",
+      "rule": "payment_terms should specify due date and remittance instructions"
+    }
+  ]
+}

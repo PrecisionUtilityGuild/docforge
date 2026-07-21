@@ -1,0 +1,48 @@
+{
+  "title": "Market Sizing Model for Document Automation",
+  "author": "Research Team",
+  "date": "2026-06-11",
+  "abstract": "This report evaluates the addressable market for agent-driven document production platforms. We model adoption curves under three scenarios and estimate revenue potential for vertical SaaS integrators. Key drivers include MCP adoption, Typst accessibility defaults, and enterprise demand for auditable PDF workflows.",
+  "sections": [
+    {
+      "title": "Methodology",
+      "body_md": "We surveyed **120 automation teams** and modeled TAM/SAM/SOM using:\n\n- Bottom-up seat counts\n- Top-down enterprise spend benchmarks"
+    },
+    {
+      "title": "Competitive Landscape",
+      "body": "Incumbent document compilers optimize for human authors. Agent-native pipelines remain underserved, creating whitespace for schema-first products."
+    }
+  ],
+  "equations": [
+    {
+      "label": "Revenue projection",
+      "latex": "R_t = R_0 \\cdot (1 + g)^t"
+    },
+    {
+      "label": "Adoption curve",
+      "latex": "A(t) = \\frac{L}{1 + e^{-k(t - t_0)}}"
+    }
+  ],
+  "findings": [
+    {
+      "title": "MCP document tools are early but accelerating",
+      "summary": "62% of surveyed teams plan a PDF deliverable step within 12 months.",
+      "confidence": "medium"
+    },
+    {
+      "title": "Schema-first templates reduce agent failure rates",
+      "summary": "Structured JSON workflows cut compile-retry loops by an estimated 40% in pilot programs.",
+      "confidence": "high"
+    }
+  ],
+  "sources": [
+    {
+      "citation": "Typst accessibility guide (2025)",
+      "url": "https://typst.app/docs/guides/accessibility/"
+    },
+    {
+      "citation": "Model Context Protocol specification",
+      "url": "https://modelcontextprotocol.io"
+    }
+  ]
+}

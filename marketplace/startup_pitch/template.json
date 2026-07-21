@@ -1,0 +1,17 @@
+{
+  "id": "startup_pitch",
+  "version": "1.0.0",
+  "name": "Startup Pitch",
+  "description": "Investor pitch deck one-pager with problem, solution, market, traction, team, and funding ask",
+  "category": "marketplace",
+  "author": "DocForge Community",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 1, "max": 3 },
+  "inputs": ["title", "company", "tagline", "problem", "solution", "market", "traction", "team", "ask"],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

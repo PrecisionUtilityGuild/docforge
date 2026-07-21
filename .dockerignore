@@ -1,0 +1,17 @@
+node_modules
+dist
+.data
+.git
+.github
+.env
+.env.local
+.slack
+.residual-sessions
+*.sqlite
+*.log
+.golden-build
+.visual-regression
+.cache
+.DS_Store
+tests
+*.md

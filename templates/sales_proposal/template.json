@@ -1,0 +1,16 @@
+{
+  "id": "sales_proposal",
+  "version": "1.0.0",
+  "name": "Sales Proposal",
+  "description": "5–15 page client proposal with scope, timeline, pricing, and assumptions",
+  "category": "business",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 3, "max": 15 },
+  "inputs": ["title", "client", "executive_summary", "scope", "timeline", "pricing"],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

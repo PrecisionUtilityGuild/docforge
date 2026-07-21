@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "id": "retention_starts_at_100",
+      "severity": "warning",
+      "rule": "first retention_rate in each cohort should be 100"
+    },
+    {
+      "id": "insights_actionable",
+      "severity": "info",
+      "rule": "insights should reference specific cohorts or metrics"
+    }
+  ]
+}

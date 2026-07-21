@@ -1,0 +1,16 @@
+{
+  "id": "financial_snapshot",
+  "version": "1.0.0",
+  "name": "Financial Snapshot",
+  "description": "P&L summary with line items, totals, and optional charts",
+  "category": "business",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 1, "max": 6 },
+  "inputs": ["title", "period", "summary", "line_items", "totals", "commentary"],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "default",
+  "name": "DocForge Default",
+  "logo": null,
+  "logo_alt": null,
+  "colors": {
+    "primary": "#111111",
+    "accent": "#2563eb",
+    "muted": "#64748b",
+    "background": "#FFFFFF",
+    "text": "#1A1A1A"
+  },
+  "fonts": {
+    "heading": "Libertinus Serif",
+    "body": "Libertinus Serif"
+  },
+  "footer": "Confidential",
+  "tone": "minimal, professional"
+}

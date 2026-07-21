@@ -1,0 +1,16 @@
+{
+  "id": "contract_summary",
+  "version": "1.0.0",
+  "name": "Contract Summary",
+  "description": "2–8 page contract summary with parties, clauses, and key dates",
+  "category": "professional",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 2, "max": 8 },
+  "inputs": ["title", "parties", "effective_date", "summary", "clauses", "key_dates"],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

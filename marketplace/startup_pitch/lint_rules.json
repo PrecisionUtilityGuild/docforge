@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "id": "team_count",
+      "severity": "info",
+      "rule": "team should have 2 to 6 members for readable layout"
+    },
+    {
+      "id": "ask_has_use_of_funds",
+      "severity": "warning",
+      "rule": "funding ask should include use_of_funds for investor clarity"
+    }
+  ]
+}

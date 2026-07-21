@@ -1,0 +1,92 @@
+{
+  "name": "@precisionutilityguild/docforge",
+  "version": "0.7.1",
+  "description": "Agent-grade document production MCP server powered by Typst",
+  "type": "module",
+  "bin": {
+    "docforge-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist/",
+    "templates/",
+    "slack/",
+    "marketplace/",
+    "brand_kits/",
+    "packages/",
+    "vendor/",
+    "scripts/",
+    "README.md",
+    ".env.sample",
+    "FORGE.md",
+    "DOCFORGE.md",
+    "HARDENING.md",
+    "Dockerfile"
+  ],
+  "scripts": {
+    "build": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\" && tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "compile:golden": "node scripts/compile-golden.mjs",
+    "test:visual": "node scripts/visual-regression.mjs",
+    "forge:smoke": "npm run build && node scripts/forge-smoke.mjs",
+    "check:typst": "node scripts/check-typst-version.mjs",
+    "check:packages": "node scripts/check-vendored-packages.mjs",
+    "check:scripts": "for f in scripts/*.mjs; do node --check \"$f\" || exit 1; done",
+    "release:qa": "node scripts/release-qa.mjs",
+    "pack:check": "npm_config_cache=${TMPDIR:-/tmp}/docforge-npm-cache npm pack --dry-run --json",
+    "lint": "eslint src tests scripts eslint.config.js vitest.config.ts",
+    "format": "prettier --write README.md FORGE.md \"src/**/*.ts\" \"tests/**/*.{ts,mjs}\" \"scripts/**/*.mjs\" \"slack/**/*.json\" \".github/**/*.yml\"",
+    "format:check": "prettier --check README.md FORGE.md \"src/**/*.ts\" \"tests/**/*.{ts,mjs}\" \"scripts/**/*.mjs\" \"slack/**/*.json\" \".github/**/*.yml\"",
+    "slack": "npm run build && node --env-file=.env dist/slack/app.js",
+    "seed:workspace": "node --env-file=.env scripts/seed-workspace.mjs",
+    "poll:slack": "node --env-file=.env scripts/poll-slack.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@slack/bolt": "^4.7.3",
+    "ajv": "^8.17.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@slack/cli-hooks": "^1.3.3",
+    "@types/node": "^22.13.10",
+    "eslint": "^9.39.4",
+    "prettier": "^3.8.4",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.61.0",
+    "vitest": "^4.1.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrecisionUtilityGuild/docforge.git"
+  },
+  "homepage": "https://github.com/PrecisionUtilityGuild/docforge#readme",
+  "bugs": {
+    "url": "https://github.com/PrecisionUtilityGuild/docforge/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "overrides": {
+    "@hono/node-server": "^2.0.5"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "typst",
+    "pdf",
+    "pdf-generation",
+    "document-generation",
+    "documents",
+    "templates",
+    "invoice",
+    "report",
+    "ai-agents",
+    "claude",
+    "slack-bot"
+  ]
+}

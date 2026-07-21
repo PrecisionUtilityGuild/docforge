@@ -1,0 +1,47 @@
+{
+  "name": "Jordan Lee",
+  "title": "Senior Product Manager",
+  "contact": {
+    "email": "jordan.lee@example.com",
+    "phone": "+1 (415) 555-0142",
+    "location": "San Francisco, CA",
+    "linkedin": "linkedin.com/in/jordanlee"
+  },
+  "summary": "Product leader with 10+ years building B2B SaaS platforms. Track record of shipping revenue-driving features, scaling cross-functional teams, and improving retention through data-informed roadmaps.",
+  "experience": [
+    {
+      "company": "Northwind Analytics",
+      "role": "Senior Product Manager",
+      "dates": "2021 – Present",
+      "bullets": [
+        "Led document automation initiative that increased enterprise ARR by 24%.",
+        "Reduced time-to-value from 45 to 18 days by redesigning onboarding.",
+        "Managed roadmap for a team of 3 PMs and 18 engineers."
+      ]
+    },
+    {
+      "company": "Contoso Systems",
+      "role": "Product Manager",
+      "dates": "2017 – 2021",
+      "bullets": [
+        "Launched reporting suite used by 2,400+ customers.",
+        "Partnered with sales to close $3.2M in expansion revenue."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Washington",
+      "degree": "B.S. Computer Science",
+      "dates": "2013 – 2017",
+      "details": "Minor in Economics"
+    }
+  ],
+  "skills": [
+    "Product strategy",
+    "Roadmapping",
+    "SQL & analytics",
+    "Stakeholder management",
+    "Agile delivery"
+  ]
+}

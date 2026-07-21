@@ -1,0 +1,26 @@
+{
+  "title": "API Gateway Outage — June 2026",
+  "incident_id": "INC-2026-0611",
+  "severity": "high",
+  "date": "2026-06-11",
+  "summary": "Elevated 503 errors on the public API gateway persisted for 47 minutes during peak traffic. Customer-facing dashboards and mobile clients were affected. On-call engineering rolled back a cache configuration change and restored service.",
+  "timeline": [
+    { "time": "14:02 UTC", "event": "Pager triggered: error rate > 5% on api-gateway" },
+    { "time": "14:08 UTC", "event": "Incident bridge opened; SRE and platform joined" },
+    { "time": "14:18 UTC", "event": "Identified connection pool saturation after cache flush" },
+    { "time": "14:35 UTC", "event": "Rollback deployed; error rate returning to baseline" },
+    { "time": "14:49 UTC", "event": "Incident resolved; monitoring green" }
+  ],
+  "impact": {
+    "users_affected": "~12% of active sessions (est. 18k users)",
+    "duration": "47 minutes",
+    "services": ["api-gateway", "auth-service", "mobile-api"]
+  },
+  "root_cause": "Connection pool limits were insufficient for post-cache-flush connection burst. Auto-scaling lagged behind traffic spike.",
+  "actions": [
+    { "title": "Raise pool ceiling and add burst headroom", "owner": "Platform", "due": "2026-06-14", "status": "open" },
+    { "title": "Add cache warm-up before flush in deploy pipeline", "owner": "Backend", "due": "2026-06-18", "status": "open" },
+    { "title": "Update runbook with rollback checklist", "owner": "SRE", "due": "2026-06-13", "status": "in_progress" }
+  ],
+  "evidence": "Slack #incidents thread and Grafana dashboard snapshots archived in ticket INC-2026-0611."
+}

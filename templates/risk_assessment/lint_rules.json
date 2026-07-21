@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "id": "high_risks_have_mitigation",
+      "severity": "warning",
+      "rule": "risks with high likelihood or impact must include mitigation"
+    },
+    {
+      "id": "risk_ids_unique",
+      "severity": "error",
+      "rule": "each risk id must be unique within the document"
+    }
+  ]
+}

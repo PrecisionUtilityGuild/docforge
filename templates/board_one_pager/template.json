@@ -1,0 +1,16 @@
+{
+  "id": "board_one_pager",
+  "version": "1.0.0",
+  "name": "Board One-Pager",
+  "description": "Single-page board update with headline metrics, highlights, and asks",
+  "category": "business",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 1, "max": 2 },
+  "inputs": ["title", "period", "headline_metrics", "highlights", "asks"],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

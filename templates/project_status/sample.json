@@ -1,0 +1,65 @@
+{
+  "title": "Platform Modernization — Weekly Status",
+  "period": "June 2–8, 2026",
+  "author": "Jordan Lee",
+  "overall_rag": "amber",
+  "summary": "Migration to the new observability stack is on track for June 20. API gateway cutover slipped one week due to partner certification delays. Team capacity is stable; hiring for two SRE roles remains in pipeline.",
+  "workstreams": [
+    {
+      "name": "Observability migration",
+      "status": "On track",
+      "rag": "green",
+      "notes": "Dashboard parity at 92%. Remaining panels scheduled for next sprint."
+    },
+    {
+      "name": "API gateway cutover",
+      "status": "Delayed",
+      "rag": "amber",
+      "notes": "Partner sandbox certification extended to June 16. Rollback plan validated."
+    },
+    {
+      "name": "Cost optimization",
+      "status": "At risk",
+      "rag": "red",
+      "notes": "Reserved instance commitment blocked pending finance approval."
+    }
+  ],
+  "blockers": [
+    "Finance approval for 12-month reserved instance commitment",
+    "Partner API certification window not available until June 16"
+  ],
+  "next_steps": [
+    "Complete observability dashboard parity by June 13",
+    "Schedule gateway cutover dry run for June 17",
+    "Escalate reserved instance approval with CFO office"
+  ],
+  "evidence": [
+    {
+      "type": "rag",
+      "source": "#team-platform",
+      "quote": "API gateway cutover slipped one week due to partner certification delays."
+    },
+    {
+      "type": "blocker",
+      "source": "#team-platform",
+      "quote": "Reserved instance commitment blocked pending finance approval."
+    },
+    {
+      "type": "next_step",
+      "source": "#team-platform",
+      "quote": "Schedule gateway cutover dry run for June 17."
+    }
+  ],
+  "source_audit": {
+    "confidence": "high",
+    "evidence_count": 3,
+    "sources": ["#team-platform"],
+    "coverage": {
+      "rag": 1,
+      "blocker": 1,
+      "next_step": 1,
+      "workstream": 0
+    },
+    "warnings": []
+  }
+}

@@ -1,0 +1,5 @@
+metric,value,target,trend,unit
+ARR,2400000,2200000,up,USD
+New customers,1250,1000,up,count
+NRR,108,105,up,percent
+Gross margin,72,70,up,percent

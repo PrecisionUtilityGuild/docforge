@@ -1,0 +1,28 @@
+{
+  "title": "Schema-First Document Compilation Pipeline",
+  "rfc_id": "RFC-0042",
+  "status": "proposed",
+  "authors": ["Jordan Lee", "Alex Morgan"],
+  "summary": "Introduce a compile pipeline where agents submit validated JSON against template schemas; Typst rendering remains an internal implementation detail.",
+  "motivation": "Direct Typst authoring by agents is error-prone and hard to lint. A schema-first contract enables validation, repair loops, and consistent business document output across templates.",
+  "specification": "1. Each template ships schema.json and sample.json validated against it.\n2. docforge_create_document accepts template_id + data; schema validation runs before workspace creation.\n3. compile_document invokes typst CLI 0.14+ with data.json injected into the workspace.\n4. On failure, diagnostics map to agent_action and suggested_repairs for automated retry.\n5. Marketplace templates resolve from marketplace/{id} with the same package layout as builtins.",
+  "alternatives": [
+    {
+      "title": "Agent-authored Typst",
+      "description": "Let agents write main.typ directly. Rejected due to layout fragility and poor lint coverage."
+    },
+    {
+      "title": "HTML-to-PDF via headless browser",
+      "description": "Faster iteration for web developers but weaker typography, accessibility tagging, and version pinning than Typst."
+    },
+    {
+      "title": "LaTeX templates",
+      "description": "Mature ecosystem but slower compile times and steeper agent error surface for business documents."
+    }
+  ],
+  "unresolved_questions": [
+    "Should marketplace templates require golden compile tests in CI before listing?",
+    "How do we version schema breaking changes without orphaning in-flight documents?",
+    "What is the policy for community author attribution vs. forked builtins?"
+  ]
+}

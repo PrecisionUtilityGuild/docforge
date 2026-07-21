@@ -1,0 +1,37 @@
+{
+  "title": "Weekly Cohort Retention Report",
+  "period": "Jan – May 2026",
+  "cohorts": [
+    {
+      "name": "Jan 2026",
+      "size": 1240,
+      "retention_rates": [100, 68, 54, 49, 45]
+    },
+    {
+      "name": "Feb 2026",
+      "size": 1385,
+      "retention_rates": [100, 71, 57, 52]
+    },
+    {
+      "name": "Mar 2026",
+      "size": 1510,
+      "retention_rates": [100, 74, 61]
+    }
+  ],
+  "insights": [
+    "Week-4 retention improved from 45% (Jan) to 61% (Mar), driven by onboarding redesign.",
+    "Larger cohorts show slightly better early retention, suggesting improved top-of-funnel quality.",
+    "Monitor Feb cohort week-5 drop; may correlate with pricing experiment launch."
+  ],
+  "charts": [
+    {
+      "type": "line",
+      "title": "Week-4 Retention by Cohort",
+      "data": [
+        { "label": "Jan 2026", "value": 45 },
+        { "label": "Feb 2026", "value": 52 },
+        { "label": "Mar 2026", "value": 61 }
+      ]
+    }
+  ]
+}

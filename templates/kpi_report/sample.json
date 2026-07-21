@@ -1,0 +1,50 @@
+{
+  "title": "Q2 2026 Board KPI Update",
+  "period": "2026-Q2",
+  "author": "Alex Morgan, CEO",
+  "summary": "Revenue and retention metrics exceeded plan. Enterprise pipeline grew 34% QoQ. Primary focus for Q3 is partner channel expansion and automation beta launch.",
+  "kpis": [
+    { "name": "ARR", "value": "$4.2M", "target": "$4.0M", "trend": "up", "change": "+18% QoQ" },
+    { "name": "Net Revenue Retention", "value": "112%", "target": "110%", "trend": "up", "change": "+4 pts" },
+    { "name": "Logo Churn", "value": "2.1%", "target": "<3%", "trend": "down", "change": "-0.6 pts" },
+    { "name": "Enterprise Pipeline", "value": "$8.6M", "target": "$7.5M", "trend": "up", "change": "+34% QoQ" }
+  ],
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Monthly ARR (USD thousands)",
+      "data": [
+        { "label": "Apr", "value": 3800 },
+        { "label": "May", "value": 4010 },
+        { "label": "Jun", "value": 4200 }
+      ]
+    },
+    {
+      "type": "line",
+      "title": "ARR Trend",
+      "data": [
+        { "label": "Apr", "value": 3800 },
+        { "label": "May", "value": 4010 },
+        { "label": "Jun", "value": 4200 }
+      ]
+    },
+    {
+      "type": "kpi_card",
+      "title": "Headline ARR",
+      "data": [{ "label": "ARR", "value": 4200000 }],
+      "options": { "delta": 18 }
+    }
+  ],
+  "commentary": "Enterprise deals closed ahead of forecast in May. Churn reduction driven by customer success outreach program. Hiring for platform roles remains the primary operational constraint.",
+  "risks": [
+    {
+      "description": "Partner onboarding may slip if legal review extends",
+      "severity": "medium",
+      "mitigation": "Pre-approve standard agreement with counsel"
+    }
+  ],
+  "asks": [
+    { "title": "Approve partner program budget", "owner": "Board", "due": "2026-06-20" },
+    { "title": "Endorse automation beta launch scope", "owner": "CTO", "due": "2026-06-15" }
+  ]
+}

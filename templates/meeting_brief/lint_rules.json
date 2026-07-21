@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "id": "agenda_has_items",
+      "severity": "warning",
+      "rule": "agenda should have at least 2 topics with durations"
+    },
+    {
+      "id": "prep_items_present",
+      "severity": "info",
+      "rule": "prep_items help attendees arrive prepared"
+    }
+  ]
+}

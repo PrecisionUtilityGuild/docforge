@@ -1,0 +1,20 @@
+{
+  "title": "Transformer Notes",
+  "author": "Forge",
+  "date": "2026-06-15",
+  "summary": "Query/key matching finds relevant tokens; values carry content forward.",
+  "body_md": "Attention score:\n\n- Query/key matching finds relevant tokens\n- Values carry content forward",
+  "equations": [
+    {
+      "label": "Attention",
+      "latex": "\\operatorname{softmax}(QK^T / \\sqrt{d_k})V",
+      "alt": "Scaled dot product attention formula"
+    }
+  ],
+  "references": [
+    {
+      "citation": "Source",
+      "url": "https://example.com/attention"
+    }
+  ]
+}

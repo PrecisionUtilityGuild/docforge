@@ -1,0 +1,9 @@
+{
+  "checks": [
+    {
+      "id": "totals_present",
+      "severity": "warning",
+      "rule": "totals should reconcile with line items when possible"
+    }
+  ]
+}

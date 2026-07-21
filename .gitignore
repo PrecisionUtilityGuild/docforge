@@ -1,0 +1,39 @@
+# dependencies / build output
+node_modules/
+dist/
+
+# runtime state & data
+.data/
+.cache/
+.golden-build/
+.visual-regression/
+tmp/
+*.log
+*.sqlite
+
+# per-template sample PDFs are a build artifact, not a baseline — visual
+# regression diffs golden-page1.png, and these churn non-deterministically.
+templates/*/sample.pdf
+marketplace/*/sample.pdf
+
+# secrets & local env
+.env
+.env.local
+
+# Slack CLI / session state (never commit — may hold tokens)
+.slack/
+.residual-sessions/
+
+# editor / assistant local config (keep tracked agent skills under .cursor/skills)
+.claude/
+.cursor/*
+!.cursor/skills/
+.vscode/
+.idea/
+
+# personal files that must never ship with the repo
+/CV*.pdf
+
+# OS cruft
+.DS_Store
+**/.DS_Store

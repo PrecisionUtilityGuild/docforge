@@ -1,0 +1,16 @@
+{
+  "id": "compliance_memo",
+  "version": "1.0.0",
+  "name": "Compliance Memo",
+  "description": "Regulatory compliance briefing with requirements and action items",
+  "category": "business",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 1, "max": 6 },
+  "inputs": ["title", "regulation", "effective_date", "summary", "requirements", "action_items"],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

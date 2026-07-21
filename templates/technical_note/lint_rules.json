@@ -1,0 +1,9 @@
+{
+  "checks": [
+    {
+      "id": "technical_note_summary_length",
+      "severity": "warning",
+      "rule": "summary should be one concise paragraph"
+    }
+  ]
+}

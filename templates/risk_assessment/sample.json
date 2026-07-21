@@ -1,0 +1,32 @@
+{
+  "title": "Platform Migration Risk Assessment",
+  "scope": "Q3 cloud migration for customer billing and reporting services",
+  "assessment_date": "2026-06-11",
+  "summary": "Twelve risks identified across technical, operational, and compliance domains. Three are rated high priority due to customer-facing impact during cutover weekend. Mitigations focus on rollback readiness, staged traffic shifting, and enhanced monitoring.",
+  "risks": [
+    {
+      "id": "R-01",
+      "description": "Data sync lag during dual-write period causes billing discrepancies",
+      "likelihood": "medium",
+      "impact": "high",
+      "mitigation": "Automated reconciliation job with alerting; freeze rate changes during cutover",
+      "owner": "Platform Engineering"
+    },
+    {
+      "id": "R-02",
+      "description": "Third-party payment gateway timeout under peak load",
+      "likelihood": "low",
+      "impact": "high",
+      "mitigation": "Load test at 2x peak; circuit breaker with retry queue",
+      "owner": "Payments Team"
+    },
+    {
+      "id": "R-03",
+      "description": "Runbook gaps for on-call engineers",
+      "likelihood": "medium",
+      "impact": "medium",
+      "mitigation": "Dry-run incident simulation; update runbooks by June 20",
+      "owner": "SRE"
+    }
+  ]
+}

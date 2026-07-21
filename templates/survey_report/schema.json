@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["title", "period", "summary", "questions", "charts", "commentary"],
+  "additionalProperties": false,
+  "properties": {
+    "title": { "type": "string", "minLength": 1 },
+    "period": { "type": "string", "minLength": 1 },
+    "author": { "type": "string" },
+    "summary": { "type": "string", "minLength": 1 },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["text", "responses"],
+        "additionalProperties": false,
+        "properties": {
+          "text": { "type": "string" },
+          "responses": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["label", "count"],
+              "additionalProperties": false,
+              "properties": {
+                "label": { "type": "string" },
+                "count": { "type": "number", "minimum": 0 }
+              }
+            }
+          }
+        }
+      }
+    },
+    "charts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["type", "data"],
+        "additionalProperties": false,
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["bar", "line", "area", "pie", "donut", "waterfall", "stacked_bar", "kpi_card"]
+          },
+          "title": { "type": "string" },
+          "data": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["label", "value"],
+              "additionalProperties": false,
+              "properties": {
+                "label": { "type": "string" },
+                "value": { "type": ["string", "number"] }
+              }
+            }
+          },
+          "options": { "type": "object" }
+        }
+      }
+    },
+    "commentary": { "type": "string", "minLength": 1 }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "executive_memo",
+  "version": "1.1.0",
+  "name": "Executive Memo",
+  "description": "1–5 page business memo with summary, sections, risks, and action items",
+  "category": "business",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 1, "max": 8 },
+  "inputs": ["title", "summary", "sections", "risks", "actions"],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

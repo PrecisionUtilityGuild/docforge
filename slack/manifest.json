@@ -1,0 +1,68 @@
+{
+  "display_information": {
+    "name": "Forge",
+    "description": "Turn Slack context into schema-validated PDFs with DocForge.",
+    "background_color": "#1a1a2e"
+  },
+  "features": {
+    "assistant_view": {
+      "assistant_description": "Ship draft, proposal, incident, board, and status PDFs from Slack context.",
+      "suggested_prompts": [
+        { "title": "Draft PDF", "message": "draft turn these notes into a PDF" },
+        { "title": "Sales proposal", "message": "proposal for Northstar" },
+        { "title": "Incident report", "message": "incident report from #incident-api-gateway" },
+        { "title": "Board KPI pack", "message": "board pack for Q3 operating review" },
+        { "title": "Status report", "message": "status for #team-eng" }
+      ]
+    },
+    "app_home": {
+      "home_tab_enabled": true,
+      "messages_tab_enabled": true,
+      "messages_tab_read_only_enabled": false
+    },
+    "bot_user": {
+      "display_name": "Forge",
+      "always_online": true
+    }
+  },
+  "oauth_config": {
+    "scopes": {
+      "bot": [
+        "app_mentions:read",
+        "assistant:write",
+        "channels:history",
+        "channels:read",
+        "chat:write",
+        "files:read",
+        "files:write",
+        "groups:history",
+        "groups:read",
+        "im:history",
+        "im:read",
+        "im:write",
+        "mpim:history",
+        "search:read.public",
+        "users:read"
+      ]
+    }
+  },
+  "settings": {
+    "event_subscriptions": {
+      "bot_events": [
+        "app_home_opened",
+        "app_mention",
+        "assistant_thread_started",
+        "message.channels",
+        "message.groups",
+        "message.im",
+        "message.mpim"
+      ]
+    },
+    "interactivity": {
+      "is_enabled": true
+    },
+    "org_deploy_enabled": false,
+    "socket_mode_enabled": true,
+    "token_rotation_enabled": false
+  }
+}

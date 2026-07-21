@@ -1,0 +1,72 @@
+{
+  "title": "Monthly Metrics Report",
+  "period": "2026-06",
+  "summary": "Q2 SaaS metrics: revenue and pipeline in $M, retention and churn in %.",
+  "metrics": [
+    {
+      "name": "ARR",
+      "value": "4.2",
+      "unit": "USD millions",
+      "target": "4.0",
+      "trend": "up"
+    },
+    {
+      "name": "Enterprise Pipeline",
+      "value": "8.6",
+      "unit": "USD millions",
+      "target": "7.5",
+      "trend": "up"
+    },
+    {
+      "name": "Net Revenue Retention",
+      "value": "112",
+      "unit": "percent",
+      "target": "110",
+      "trend": "up"
+    },
+    {
+      "name": "Logo Churn",
+      "value": "2.1",
+      "unit": "percent",
+      "target": "3.0",
+      "trend": "down"
+    }
+  ],
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Metrics ($ millions)",
+      "data": [
+        {
+          "label": "ARR",
+          "value": 4.2
+        },
+        {
+          "label": "Enterprise Pipeline",
+          "value": 8.6
+        }
+      ],
+      "options": {
+        "unit": "$ millions"
+      }
+    },
+    {
+      "type": "bar",
+      "title": "Metrics (%)",
+      "data": [
+        {
+          "label": "Net Revenue Retention",
+          "value": 112
+        },
+        {
+          "label": "Logo Churn",
+          "value": 2.1
+        }
+      ],
+      "options": {
+        "unit": "%"
+      }
+    }
+  ],
+  "commentary": "ARR up 5% to target; pipeline well ahead of plan. Retention strong at 112%; churn held below the 3% ceiling."
+}

@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "id": "timeline_has_events",
+      "severity": "warning",
+      "rule": "timeline must have at least 2 events"
+    },
+    {
+      "id": "lessons_learned_present",
+      "severity": "warning",
+      "rule": "lessons_learned should have at least 2 items for substantive postmortems"
+    }
+  ]
+}

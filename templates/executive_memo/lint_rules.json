@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "id": "executive_summary_length",
+      "severity": "warning",
+      "rule": "summary word count between 20 and 400"
+    },
+    {
+      "id": "risks_have_mitigations",
+      "severity": "warning",
+      "rule": "each risk must have mitigation field when severity >= high"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+dist
+node_modules
+vendor
+templates
+packages
+marketplace
+brand_kits
+package-lock.json
+*.pdf
+*.png

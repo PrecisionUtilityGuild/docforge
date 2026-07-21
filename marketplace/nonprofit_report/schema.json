@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["title", "organization", "year", "mission", "impact_metrics", "programs", "financials", "thank_you"],
+  "additionalProperties": false,
+  "properties": {
+    "title": { "type": "string", "minLength": 1 },
+    "organization": { "type": "string", "minLength": 1 },
+    "year": { "type": "string", "minLength": 1 },
+    "mission": { "type": "string", "minLength": 1 },
+    "impact_metrics": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["label", "value"],
+        "additionalProperties": false,
+        "properties": {
+          "label": { "type": "string" },
+          "value": { "type": "string" }
+        }
+      }
+    },
+    "programs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "description"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "financials": {
+      "type": "object",
+      "required": ["revenue", "expenses"],
+      "additionalProperties": false,
+      "properties": {
+        "revenue": { "type": "string" },
+        "expenses": { "type": "string" }
+      }
+    },
+    "thank_you": { "type": "string", "minLength": 1 },
+    "typst_snippets": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "footer_note": { "type": "string", "maxLength": 500 }
+      }
+    }
+  }
+}

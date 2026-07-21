@@ -1,0 +1,19 @@
+{
+  "id": "northstar",
+  "name": "Northstar Analytics",
+  "logo": "logo.svg",
+  "logo_alt": "Northstar Analytics logo — gold triangle mark",
+  "colors": {
+    "primary": "#111111",
+    "accent": "#E6B800",
+    "muted": "#666666",
+    "background": "#FFFFFF",
+    "text": "#1A1A1A"
+  },
+  "fonts": {
+    "heading": "Libertinus Serif",
+    "body": "Libertinus Serif"
+  },
+  "footer": "Confidential — Northstar Analytics",
+  "tone": "minimal, premium, analytical"
+}

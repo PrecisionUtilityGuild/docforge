@@ -1,0 +1,32 @@
+{
+  "title": "SOC 2 Type II Readiness Briefing",
+  "regulation": "SOC 2 Trust Services Criteria (Security & Availability)",
+  "effective_date": "2026-09-01",
+  "summary": "Audit window opens September 1. Three control gaps remain in access management and change logging. Legal and engineering leads must close gaps by August 15 to avoid delaying customer-facing certification.",
+  "requirements": [
+    "Enforce MFA for all production system access",
+    "Maintain 12-month immutable audit logs for privileged actions",
+    "Document and test incident response playbooks quarterly",
+    "Complete vendor risk assessments for all sub-processors handling customer data"
+  ],
+  "action_items": [
+    {
+      "title": "Deploy centralized SSO with MFA enforcement",
+      "owner": "IT Security",
+      "due": "2026-07-30",
+      "status": "in_progress"
+    },
+    {
+      "title": "Enable tamper-evident logging on production clusters",
+      "owner": "Platform Engineering",
+      "due": "2026-08-01",
+      "status": "open"
+    },
+    {
+      "title": "Finalize sub-processor assessment packet",
+      "owner": "Legal",
+      "due": "2026-08-15",
+      "status": "open"
+    }
+  ]
+}

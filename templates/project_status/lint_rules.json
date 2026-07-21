@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "id": "workstreams_have_rag",
+      "severity": "warning",
+      "rule": "each workstream should have a rag value aligned with status notes"
+    },
+    {
+      "id": "blockers_documented",
+      "severity": "info",
+      "rule": "document blockers when overall_rag is red or amber"
+    }
+  ]
+}

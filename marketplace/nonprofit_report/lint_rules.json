@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "id": "metrics_count",
+      "severity": "info",
+      "rule": "impact_metrics should have 3 to 6 items for balanced layout"
+    },
+    {
+      "id": "programs_have_descriptions",
+      "severity": "warning",
+      "rule": "each program should include a substantive description"
+    }
+  ]
+}

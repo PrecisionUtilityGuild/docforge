@@ -1,0 +1,19 @@
+{
+  "checks": [
+    {
+      "id": "status_draft_warning",
+      "severity": "info",
+      "rule": "draft RFCs should be reviewed before marking proposed or accepted"
+    },
+    {
+      "id": "alternatives_count",
+      "severity": "warning",
+      "rule": "alternatives should document at least two rejected options"
+    },
+    {
+      "id": "open_questions",
+      "severity": "info",
+      "rule": "unresolved_questions should be addressed before acceptance"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "title": "2025 Annual Impact Report",
+  "organization": "Riverbend Community Foundation",
+  "year": "2025",
+  "mission": "We expand access to STEM education and mentorship for underserved youth in the Pacific Northwest.",
+  "impact_metrics": [
+    { "label": "Students Served", "value": "4,280" },
+    { "label": "Mentor Hours", "value": "18,400" },
+    { "label": "Scholarships Awarded", "value": "$620K" },
+    { "label": "Partner Schools", "value": "36" }
+  ],
+  "programs": [
+    {
+      "name": "After-School Labs",
+      "description": "Weekly hands-on science and coding sessions in 22 Title I schools, with transportation and meals provided."
+    },
+    {
+      "name": "Summer Bridge",
+      "description": "Six-week intensive program pairing rising 9th graders with industry mentors and college readiness workshops."
+    },
+    {
+      "name": "Family STEM Nights",
+      "description": "Quarterly community events engaging 1,200+ families in project-based learning and resource fairs."
+    }
+  ],
+  "financials": {
+    "revenue": "$2.4M",
+    "expenses": "$2.1M"
+  },
+  "thank_you": "Thank you to our donors, volunteers, and partner schools. Your generosity made every program in this report possible. Together we are building pathways to opportunity."
+}

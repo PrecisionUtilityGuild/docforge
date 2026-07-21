@@ -1,0 +1,39 @@
+{
+  "title": "Database Failover Delay — Postmortem",
+  "date": "2026-06-11",
+  "severity": "high",
+  "summary": "Primary database failover took 22 minutes instead of the expected 5-minute RTO. Read replicas served stale data for 8 minutes after promotion. No data loss occurred; customer-facing write operations were queued and replayed successfully.",
+  "timeline": [
+    { "time": "09:14 UTC", "event": "Primary DB health check failed; automated failover initiated" },
+    { "time": "09:18 UTC", "event": "On-call paged; incident bridge opened" },
+    { "time": "09:26 UTC", "event": "Replica promotion stalled on replication lag threshold" },
+    { "time": "09:31 UTC", "event": "Manual override approved; replica promoted" },
+    { "time": "09:36 UTC", "event": "Write queue drained; services fully restored" }
+  ],
+  "impact": {
+    "users_affected": "~4% of active users (write operations delayed)",
+    "duration": "22 minutes",
+    "services": ["orders-api", "billing-service", "admin-console"]
+  },
+  "root_cause": "Failover automation blocked promotion when replication lag exceeded 30s, but lag metric was stale due to monitoring agent crash on the replica host.",
+  "what_went_well": [
+    "Incident bridge formed within 4 minutes with clear roles",
+    "Write queue prevented data loss during failover window",
+    "Customer support used pre-approved status template within 10 minutes"
+  ],
+  "what_went_wrong": [
+    "Replication lag metric was not independently verified before blocking promotion",
+    "Runbook did not document manual override criteria",
+    "Stale-read detection alert fired 6 minutes after promotion"
+  ],
+  "action_items": [
+    { "title": "Add redundant lag probes on replica hosts", "owner": "Platform", "due": "2026-06-18", "status": "open" },
+    { "title": "Document manual failover override in runbook", "owner": "SRE", "due": "2026-06-14", "status": "in_progress" },
+    { "title": "Add stale-read canary check post-promotion", "owner": "Backend", "due": "2026-06-21", "status": "open" }
+  ],
+  "lessons_learned": [
+    "Failover gates should fail open with human confirmation when metrics are ambiguous",
+    "Monitoring agent health must be part of failover readiness checks",
+    "Blameless review surfaced three quick wins without assigning individual fault"
+  ]
+}

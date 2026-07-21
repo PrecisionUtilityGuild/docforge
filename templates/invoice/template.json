@@ -1,0 +1,25 @@
+{
+  "id": "invoice",
+  "version": "1.0.0",
+  "name": "Invoice",
+  "description": "1–2 page professional invoice with line items, calculated subtotal, tax, and total",
+  "category": "professional",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 1, "max": 2 },
+  "inputs": [
+    "title",
+    "invoice_number",
+    "client",
+    "date",
+    "due_date",
+    "line_items",
+    "tax_rate",
+    "payment_terms"
+  ],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

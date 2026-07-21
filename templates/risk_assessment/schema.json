@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["title", "scope", "assessment_date", "risks", "summary"],
+  "additionalProperties": false,
+  "properties": {
+    "title": { "type": "string", "minLength": 1 },
+    "scope": { "type": "string", "minLength": 1 },
+    "assessment_date": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 },
+    "risks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "description", "likelihood", "impact", "mitigation", "owner"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "description": { "type": "string" },
+          "likelihood": { "type": "string", "enum": ["low", "medium", "high"] },
+          "impact": { "type": "string", "enum": ["low", "medium", "high"] },
+          "mitigation": { "type": "string" },
+          "owner": { "type": "string" }
+        }
+      }
+    },
+    "typst_snippets": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "footer_note": { "type": "string", "maxLength": 500 }
+      }
+    }
+  }
+}

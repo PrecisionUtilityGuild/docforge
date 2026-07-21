@@ -1,0 +1,27 @@
+{
+  "title": "Board Update — June 2026",
+  "period": "Q2 2026",
+  "headline_metrics": [
+    { "label": "ARR", "value": "$18.4M", "trend": "up" },
+    { "label": "Net Revenue Retention", "value": "112%", "trend": "up" },
+    { "label": "Gross Margin", "value": "78%", "trend": "flat" },
+    { "label": "Cash Runway", "value": "22 mo", "trend": "up" }
+  ],
+  "highlights": [
+    "Closed three enterprise deals totaling $2.1M ARR.",
+    "Shipped reporting automation beta to 40 design partners.",
+    "Reduced infrastructure cost per tenant by 14%."
+  ],
+  "asks": [
+    {
+      "title": "Approve partner channel budget for H2",
+      "owner": "CFO",
+      "due": "2026-06-20"
+    },
+    {
+      "title": "Intro to strategic acquirer contact",
+      "owner": "CEO",
+      "due": "2026-07-01"
+    }
+  ]
+}

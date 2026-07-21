@@ -1,0 +1,22 @@
+{
+  "title": "ADR-014: Adopt Event Sourcing for Order Pipeline",
+  "status": "accepted",
+  "date": "2026-06-11",
+  "context": "The order pipeline currently uses synchronous database writes across three services. Peak traffic causes contention and makes audit trails difficult to reconstruct. Product requires immutable order history for compliance.",
+  "decision": "Adopt event sourcing for the order aggregate with an outbox pattern for downstream consumers. New writes go to an append-only event log; read models are rebuilt asynchronously.",
+  "consequences": "Positive: full audit trail, reduced cross-service locking, easier replay for debugging. Negative: increased operational complexity, team training required, migration window for existing orders.",
+  "alternatives": [
+    {
+      "title": "Continue with synchronous writes",
+      "description": "Minimal change but does not solve audit or contention issues at scale."
+    },
+    {
+      "title": "Change Data Capture (CDC) only",
+      "description": "Lower migration cost but provides eventual consistency without domain-level event semantics."
+    },
+    {
+      "title": "Full CQRS with separate write/read stores",
+      "description": "Strong separation but higher infrastructure cost than event sourcing with projections."
+    }
+  ]
+}

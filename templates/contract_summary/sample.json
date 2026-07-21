@@ -1,0 +1,37 @@
+{
+  "title": "Master Services Agreement — Summary",
+  "parties": [
+    { "name": "DocForge Inc.", "role": "Service Provider" },
+    { "name": "Northstar Analytics", "role": "Client" }
+  ],
+  "effective_date": "2026-01-15",
+  "summary": "Three-year master services agreement covering platform integration, support, and professional services. Auto-renews annually unless terminated with 90 days notice. Governing law: Delaware.",
+  "clauses": [
+    {
+      "title": "Scope of Services",
+      "body": "Provider delivers software integration, custom development, and tier-2 support as defined in applicable Statements of Work. Out-of-scope work requires written change order."
+    },
+    {
+      "title": "Fees and Payment",
+      "body": "Fees per SOW. Invoices net 30. Late payments accrue 1.5% monthly interest. Client responsible for applicable taxes excluding Provider income taxes."
+    },
+    {
+      "title": "Confidentiality",
+      "body": "Mutual NDA terms survive termination for five years. Excludes information publicly available or independently developed."
+    },
+    {
+      "title": "Limitation of Liability",
+      "body": "Aggregate liability capped at fees paid in the prior twelve months. No liability for indirect or consequential damages except for confidentiality breach."
+    },
+    {
+      "title": "Termination",
+      "body": "Either party may terminate for material breach uncured after 30 days notice. Client pays for work performed through termination date."
+    }
+  ],
+  "key_dates": [
+    { "label": "Effective date", "date": "2026-01-15" },
+    { "label": "Initial term end", "date": "2029-01-14" },
+    { "label": "Annual renewal notice deadline", "date": "2028-10-16" },
+    { "label": "Next pricing review", "date": "2027-01-15" }
+  ]
+}

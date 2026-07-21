@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "id": "metrics_count",
+      "severity": "info",
+      "rule": "headline_metrics should have 3 to 6 items for one-page layout"
+    },
+    {
+      "id": "asks_have_owners",
+      "severity": "warning",
+      "rule": "each board ask should include an owner"
+    }
+  ]
+}

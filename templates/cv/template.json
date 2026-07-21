@@ -1,0 +1,16 @@
+{
+  "id": "cv",
+  "version": "1.0.0",
+  "name": "CV / Resume",
+  "description": "1–3 page professional resume with experience, education, and skills",
+  "category": "professional",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 1, "max": 4 },
+  "inputs": ["name", "title", "contact", "summary", "experience", "education", "skills"],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

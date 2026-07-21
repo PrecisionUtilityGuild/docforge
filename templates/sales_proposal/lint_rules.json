@@ -1,0 +1,9 @@
+{
+  "checks": [
+    {
+      "id": "pricing_has_total",
+      "severity": "warning",
+      "rule": "pricing must include total"
+    }
+  ]
+}

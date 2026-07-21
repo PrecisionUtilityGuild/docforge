@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "id": "parties_documented",
+      "severity": "warning",
+      "rule": "parties should include at least two named entities with roles"
+    },
+    {
+      "id": "key_dates_present",
+      "severity": "info",
+      "rule": "key_dates should include renewal and termination milestones"
+    }
+  ]
+}

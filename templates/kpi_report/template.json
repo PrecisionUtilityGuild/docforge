@@ -1,0 +1,16 @@
+{
+  "id": "kpi_report",
+  "version": "1.1.0",
+  "name": "KPI Report",
+  "description": "2–8 page board KPI update with metrics cards, commentary, risks, and asks",
+  "category": "business",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 2, "max": 8 },
+  "inputs": ["title", "period", "summary", "kpis", "commentary"],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

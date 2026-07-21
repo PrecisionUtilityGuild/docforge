@@ -1,0 +1,9 @@
+{
+  "checks": [
+    {
+      "id": "metrics_have_targets",
+      "severity": "warning",
+      "rule": "each metric should have target when available"
+    }
+  ]
+}

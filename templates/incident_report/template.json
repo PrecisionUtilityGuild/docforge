@@ -1,0 +1,16 @@
+{
+  "id": "incident_report",
+  "version": "1.0.0",
+  "name": "Incident Report",
+  "description": "3–10 page post-incident report with severity, timeline, impact, root cause, and actions",
+  "category": "business",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 2, "max": 10 },
+  "inputs": ["title", "severity", "summary", "timeline", "impact", "root_cause", "actions"],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

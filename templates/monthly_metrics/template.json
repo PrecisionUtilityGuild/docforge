@@ -1,0 +1,16 @@
+{
+  "id": "monthly_metrics",
+  "version": "1.0.0",
+  "name": "Monthly Metrics",
+  "description": "CSV-driven metrics dashboard with metric cards and charts",
+  "category": "business",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 2, "max": 8 },
+  "inputs": ["title", "period", "summary", "metrics", "charts", "commentary"],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

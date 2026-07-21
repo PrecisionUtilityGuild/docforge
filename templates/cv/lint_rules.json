@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "id": "summary_length",
+      "severity": "warning",
+      "rule": "summary word count between 30 and 200"
+    },
+    {
+      "id": "experience_bullets",
+      "severity": "info",
+      "rule": "each experience entry should have at least 2 bullets"
+    }
+  ]
+}

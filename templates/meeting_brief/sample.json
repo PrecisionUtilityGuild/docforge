@@ -1,0 +1,24 @@
+{
+  "title": "Q3 Planning — Engineering Leadership",
+  "date": "2026-06-13",
+  "attendees": [
+    "Alex Morgan (VP Engineering)",
+    "Jordan Lee (Director, Platform)",
+    "Sam Patel (Director, Product Engineering)",
+    "Riley Chen (Staff SRE)"
+  ],
+  "objective": "Align on Q3 engineering priorities, capacity allocation, and dependency risks before board prep.",
+  "agenda": [
+    { "topic": "Q2 retrospective highlights", "duration": "10 min" },
+    { "topic": "Q3 priority stack rank", "duration": "25 min" },
+    { "topic": "Capacity and hiring plan", "duration": "15 min" },
+    { "topic": "Cross-team dependencies", "duration": "15 min" },
+    { "topic": "Decisions and action items", "duration": "10 min" }
+  ],
+  "prep_items": [
+    "Review Q2 OKR scorecard (shared in Slack #eng-leads)",
+    "Bring top 3 risks for your area with mitigation options",
+    "Confirm open headcount and backfill status"
+  ],
+  "background": "Board meeting is June 20. CFO requested a single engineering narrative covering platform modernization, reliability investments, and product velocity. This session produces the draft narrative and owner assignments."
+}

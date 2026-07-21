@@ -1,0 +1,20 @@
+{
+  "title": "Q2 2026 Financial Snapshot",
+  "period": "2026-Q2",
+  "author": "Finance",
+  "summary": "Revenue grew 18% QoQ driven by enterprise expansion. Operating expenses increased with platform hiring; net margin held at 22%.",
+  "line_items": [
+    { "category": "Subscription Revenue", "amount": "$3,420,000" },
+    { "category": "Professional Services", "amount": "$280,000" },
+    { "category": "Cost of Revenue", "amount": "($620,000)" },
+    { "category": "Sales & Marketing", "amount": "($890,000)" },
+    { "category": "R&D", "amount": "($1,120,000)" },
+    { "category": "G&A", "amount": "($410,000)" }
+  ],
+  "totals": {
+    "revenue": "$3,700,000",
+    "expenses": "$3,040,000",
+    "net": "$660,000"
+  },
+  "commentary": "Enterprise ARR crossed $4M. Gross margin stable at 83%. Q3 focus: partner channel efficiency and automation cost savings."
+}

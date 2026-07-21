@@ -1,0 +1,35 @@
+{
+  "title": "Q2 Board Update",
+  "author": "Alex Morgan",
+  "date": "2026-06-11",
+  "summary": "Revenue grew 18% quarter-over-quarter. We closed three enterprise deals and reduced churn to 2.1%. Primary focus next quarter is expanding the partner channel and shipping the reporting automation beta.",
+  "sections": [
+    {
+      "title": "Highlights",
+      "body": "Enterprise pipeline is up 34%. NPS improved to 52. Engineering delivered the document automation prototype on schedule."
+    },
+    {
+      "title": "Challenges",
+      "body": "Hiring for senior platform roles remains slower than planned. Two customer integrations slipped due to dependency on external APIs."
+    }
+  ],
+  "risks": [
+    {
+      "description": "Partner onboarding may slip if legal review extends beyond June",
+      "severity": "medium",
+      "mitigation": "Pre-approve standard agreement template with counsel"
+    }
+  ],
+  "actions": [
+    {
+      "title": "Approve partner program budget",
+      "owner": "CFO",
+      "due": "2026-06-20"
+    },
+    {
+      "title": "Review automation beta scope",
+      "owner": "CTO",
+      "due": "2026-06-15"
+    }
+  ]
+}

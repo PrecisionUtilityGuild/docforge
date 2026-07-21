@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["title", "abstract", "sections", "findings"],
+  "additionalProperties": false,
+  "properties": {
+    "title": { "type": "string", "minLength": 1 },
+    "author": { "type": "string" },
+    "date": { "type": "string" },
+    "abstract": { "type": "string", "minLength": 1 },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["title"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "type": "string" },
+          "body": { "type": "string" },
+          "body_md": { "type": "string", "description": "Markdown prose (Wave 4)" }
+        }
+      }
+    },
+    "equations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "latex"],
+        "additionalProperties": false,
+        "properties": {
+          "label": { "type": "string" },
+          "latex": { "type": "string", "description": "LaTeX math fragment (MiTeX)" },
+          "alt": { "type": "string", "description": "Alt text for PDF/UA-1 accessibility" }
+        }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["title", "summary"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "type": "string" },
+          "summary": { "type": "string" },
+          "confidence": { "type": "string", "enum": ["low", "medium", "high"] }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["citation"],
+        "additionalProperties": false,
+        "properties": {
+          "citation": { "type": "string" },
+          "url": { "type": "string" }
+        }
+      }
+    },
+    "appendix": {
+      "type": "array",
+      "description": "Optional supplementary appendix blocks (raw data, evidence)",
+      "items": {
+        "type": "object",
+        "required": ["title", "body"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "type": "string" },
+          "body": { "type": "string" }
+        }
+      }
+    },
+    "typst_snippets": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "footer_note": { "type": "string", "maxLength": 500 },
+        "header_note": { "type": "string", "maxLength": 500 }
+      }
+    }
+  }
+}

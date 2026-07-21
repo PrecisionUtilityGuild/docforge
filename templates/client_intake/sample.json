@@ -1,0 +1,32 @@
+{
+  "title": "Discovery Intake — Q3 Automation Project",
+  "client": "Northstar Manufacturing",
+  "date": "2026-06-11",
+  "contact": {
+    "name": "Riley Chen",
+    "email": "riley.chen@northstar.example",
+    "phone": "+1 (312) 555-0198",
+    "role": "VP Operations"
+  },
+  "objectives": [
+    "Automate invoice processing for 12 regional plants",
+    "Reduce manual data entry by at least 60%",
+    "Integrate with existing SAP instance by Q4"
+  ],
+  "requirements": [
+    "Support PDF and EDI invoice formats",
+    "Role-based approval workflow with audit trail",
+    "SSO via Azure AD",
+    "Export to existing data warehouse nightly"
+  ],
+  "constraints": [
+    "Budget capped at $450K for phase one",
+    "Go-live must not disrupt month-end close in September",
+    "All data must remain in US-East region"
+  ],
+  "next_steps": [
+    "Schedule technical deep-dive with IT security",
+    "Share sample invoices and approval matrix",
+    "Draft statement of work by 2026-06-25"
+  ]
+}

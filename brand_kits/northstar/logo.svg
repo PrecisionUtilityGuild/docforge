@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40" role="img" aria-label="Northstar Analytics">
+  <rect width="120" height="40" fill="#111111" rx="4"/>
+  <polygon points="20,30 30,10 40,30" fill="#E6B800"/>
+  <text x="48" y="26" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF">NORTHSTAR</text>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "id": "decision_record",
+  "version": "1.0.0",
+  "name": "Architecture Decision Record",
+  "description": "1–4 page ADR documenting context, decision, consequences, and alternatives",
+  "category": "operations",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 1, "max": 4 },
+  "inputs": ["title", "status", "date", "context", "decision", "consequences", "alternatives"],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

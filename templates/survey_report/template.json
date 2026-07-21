@@ -1,0 +1,16 @@
+{
+  "id": "survey_report",
+  "version": "1.0.0",
+  "name": "Survey Report",
+  "description": "Survey response breakdown with bar charts and commentary",
+  "category": "business",
+  "typst_version": ">=0.14.0",
+  "packages": {},
+  "page_budget": { "min": 2, "max": 10 },
+  "inputs": ["title", "period", "summary", "questions", "charts", "commentary"],
+  "outputs": ["pdf", "png_preview", "source_zip"],
+  "accessibility": {
+    "requires_alt_text": false,
+    "requires_document_title": true
+  }
+}

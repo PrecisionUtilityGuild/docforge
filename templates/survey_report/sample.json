@@ -1,0 +1,49 @@
+{
+  "title": "Q2 2026 Customer Satisfaction Survey",
+  "period": "2026-Q2",
+  "author": "Product Research",
+  "summary": "Survey completed by 248 respondents. Overall satisfaction remains strong with room to improve onboarding and support response times.",
+  "questions": [
+    {
+      "text": "How satisfied are you with the product overall?",
+      "responses": [
+        { "label": "Very satisfied", "count": 112 },
+        { "label": "Satisfied", "count": 86 },
+        { "label": "Neutral", "count": 32 },
+        { "label": "Dissatisfied", "count": 12 },
+        { "label": "Very dissatisfied", "count": 6 }
+      ]
+    },
+    {
+      "text": "How likely are you to recommend us?",
+      "responses": [
+        { "label": "9–10 (Promoter)", "count": 98 },
+        { "label": "7–8 (Passive)", "count": 94 },
+        { "label": "0–6 (Detractor)", "count": 56 }
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "type": "bar",
+      "title": "Overall Satisfaction",
+      "data": [
+        { "label": "Very satisfied", "value": 112 },
+        { "label": "Satisfied", "value": 86 },
+        { "label": "Neutral", "value": 32 },
+        { "label": "Dissatisfied", "value": 12 },
+        { "label": "Very dissatisfied", "value": 6 }
+      ]
+    },
+    {
+      "type": "bar",
+      "title": "NPS Breakdown",
+      "data": [
+        { "label": "Promoter", "value": 98 },
+        { "label": "Passive", "value": 94 },
+        { "label": "Detractor", "value": 56 }
+      ]
+    }
+  ],
+  "commentary": "Promoters cite reliability and integrations. Detractors highlight slow support and onboarding complexity. Priority for Q3: self-serve onboarding and SLA improvements."
+}

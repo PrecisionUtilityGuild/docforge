@@ -1,9 +1,17 @@
+import { readFileSync } from "node:fs";
+import path from "node:path";
 import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
 import type { CallToolResult } from "@modelcontextprotocol/sdk/types.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
+import { PACKAGE_ROOT } from "../config.js";
 import * as service from "../service.js";
 import { getTemplateReadme, getTemplateSample } from "../templates/registry.js";
+
+// Version from package.json so the MCP handshake can't drift from the release.
+const PACKAGE_VERSION: string = JSON.parse(
+  readFileSync(path.join(PACKAGE_ROOT, "package.json"), "utf8"),
+).version;
 
 const TOOL_DESCRIPTION_CREATE = `Creates a document from template + validated JSON data.
 Returns document_id (required for compile, preview, export). Expires after 24h idle.
@@ -13,7 +21,7 @@ ON FAILURE: schema_error with agent_action — fix fields before compile.`;
 export async function startMcpServer(): Promise<void> {
   await service.initService();
 
-  const server = new McpServer({ name: "docforge", version: "0.7.0" });
+  const server = new McpServer({ name: "docforge", version: PACKAGE_VERSION });
 
   server.registerTool(
     "docforge_list_templates",

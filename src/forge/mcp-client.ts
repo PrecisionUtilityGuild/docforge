@@ -1,9 +1,15 @@
 import path from "node:path";
 import { access } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
+import { readFileSync } from "node:fs";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
-import { getDataRoot } from "../config.js";
+import { getDataRoot, PACKAGE_ROOT } from "../config.js";
+
+// Version from package.json so the client identity can't drift from the release.
+const PACKAGE_VERSION: string = JSON.parse(
+  readFileSync(path.join(PACKAGE_ROOT, "package.json"), "utf8"),
+).version;
 import type { Diagnostic } from "../errors.js";
 import type { LintIssue } from "../lint/engine.js";
 import type { VisualQAFinding } from "../qa/visual.js";
@@ -120,7 +126,7 @@ export class DocForgeMcpClient {
       args: [this.serverEntry],
       env: { ...process.env } as Record<string, string>,
     });
-    const client = new Client({ name: "forge-slack-agent", version: "0.7.0" });
+    const client = new Client({ name: "forge-slack-agent", version: PACKAGE_VERSION });
     // If the child dies, drop our handles so the next call respawns.
     transport.onclose = () => {
       if (this.transport === transport) {

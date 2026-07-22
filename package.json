@@ -1,6 +1,6 @@
 {
   "name": "@precisionutilityguild/docforge",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Agent-grade document production MCP server powered by Typst",
   "type": "module",
   "bin": {
@@ -88,5 +88,6 @@
     "ai-agents",
     "claude",
     "slack-bot"
-  ]
+  ],
+  "license": "MIT"
 }
